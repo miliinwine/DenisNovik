@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Bold";
+  src: url(../fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Medium";
+  src: url(../fonts/Gilroy-Medium.ttf);
+}
+$bold-font: "Bold";
+$medium-font: "Medium";
+$base-font-color: black;
+$second-font-color: #828282;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.conteiner {
+  width: 940px;
+  margin: 0 auto;
+}
+h2 {
+  font: 34px $bold-font;
+  text-align: center;
+}
+p {
+  text-align: center;
+  font: 18px $medium-font;
+}
+.active {
+  display: none;
+}
+.menu {
+  border-bottom: solid 2px $second-font-color;
+  display: flex;
+  justify-content: space-between;
+  font: 18px $bold-font;
+  padding: 32.99px 0 31.92px 0;
+  a {
+    text-decoration: none;
+    color: $second-font-color;
+  }
+  a:hover {
+    color: $base-font-color;
+  }
+}
+.mobile__menu{
+  display: none;
+}
+.header {
+  div {
+    display: flex;
+    justify-content: space-between;
+    color: $base-font-color;
+  }
+  h1 {
+    font: 47.339px $bold-font;
+    margin-top: 40.13px;
+  }
+  p {
+    margin-top: 95.21px;
+  }
+  img {
+    margin-top: 30.64px;
+  }
+  .header__button{
+    display: none;
+  }
+}
+.text {
+  background-color: #f6f6f6;
+  margin-top: 104.06px;
+  height: 506px;
+  h2 {
+    padding: 120.25px 0 17.69px 0;
+  }
+  p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+}
+.skills {
+  margin-top: 91px;
+  font: 18px $medium-font;
+  text-align: center;
+  h2 {
+    margin-bottom: 69.1px;
+  }
+  figcaption {
+    color: $second-font-color;
+    margin: 24px 0 41.41px 0;
+  }
+  .skills-figma {
+    margin-bottom: 59px;
+  }
+  .skills-icons {
+    display: flex;
+    justify-content: space-between;
+    font: 14px $bold-font;
+    margin-top: 83.49px;
+  }
+}
+.portfolio {
+  background-color: #f6f6f6;
+  margin-top: 110.06px;
+  padding-bottom: 96.07px;
+  h2 {
+    padding: 112.93px 0 47px 0;
+  }
+  p,
+  a {
+    text-decoration-line: none;
+    color: $base-font-color;
+    margin: 43px 0 99px 0;
+  }
+  a:hover {
+    text-decoration-line: underline;
+  }
+}
+.footer {
+  h2 {
+    margin: 114.24px 0 20.03px 0;
+  }
+  button {
+    background-color: $base-font-color;
+    width: 180.5px;
+    height: 42px;
+    border-radius: 20px;
+    font: 18px $bold-font;
+    color: #ffffff;
+    border: none;
+    transform: translateX(210%);
+    margin-top: 29.6px;
+  }
+  div {
+    display: flex;
+    transform: translateX(31%);
+    margin-top: 86px;
+    gap: 60px;
+  }
+  p:last-child {
+    color: $second-font-color;
+    font: 14px $medium-font;
+    margin: 45px 0 123px 0;
+  }
+}
+@media (max-width: 375px) {
+  .conteiner {
+    width: 317px;
+    margin: 0 auto;
+  }
+  .menu {
+    display: none;
+  }
+  .disactive {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .mobile__menu{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: $bold-font;
+    padding: 80px 0 0 20px;
+    gap: 100px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      a {
+        text-decoration: none;
+        color: $second-font-color;
+      }
+      a:hover {
+        color: $base-font-color;
+        }
+    }
+  }
+  .header {
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    .header__title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      margin-top: 65px;
+    }
+    p {
+      margin: 0;
+      margin-top: 23px;
+      text-align: left;
+    }
+    .header__button{
+      display: block;
+      margin-top: 80px;
+    }
+  }
+  .skills {
+    .skills-icons {
+      display: flex;
+      flex-direction: column;
+    }
+    figure {
+      margin-bottom: 81px;
+    }
+  }
+  .portfolio {
+    margin: 0;
+  }
+  .footer {
+    button {
+      width: 316px;
+      height: 42px;
+      transform: translateX(0);
+    }
+    div {
+      transform: translateX(-5%);
+    }
+    p:last-child {
+      font-size: 18px;
+    }
+  }
+}

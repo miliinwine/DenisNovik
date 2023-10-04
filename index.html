@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Denis Novik Scss</title>
+  </head>
+  <body>
+    <header>
+      <div class="conteiner">
+        <section class="menu">
+          <a class="menu-link" href="#home">Home</a>
+          <a class="menu-link" href="#about">About me</a>
+          <a class="menu-link" href="#skills">Skills</a>
+          <a class="menu-link" href="#portfolio">Portfolio</a>
+          <a class="menu-link" href="#contacts">Contacts</a>
+        </section>
+      </div>
+      <section class="mobile__menu">
+        <nav>
+          <a class="menu-link" href="#home">Home</a>
+          <a class="menu-link" href="#about">About me</a>
+          <a class="menu-link" href="#skills">Skills</a>
+          <a class="menu-link" href="#portfolio">Portfolio</a>
+          <a class="menu-link" href="#contacts">Contacts</a>
+        </nav>
+        <div class="mobile__menu__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+            <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)" fill="#828282"/>
+            <rect x="0.831299" y="19.5566" width="27.3715" height="3.8" transform="rotate(-45 0.831299 19.5566)" fill="#828282"/>
+            </svg>
+        </div>
+      </section>
+      <div class="conteiner">
+        <section class="header" id="home">
+            <div>
+              <div class="header__title">          
+                <h1>Denis <br />Novik</h1>
+                <div class="header__button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="20" viewBox="0 0 33 20" fill="none">
+                    <rect width="33" height="3.83721" fill="black"/>
+                    <rect y="7.67383" width="33" height="3.83721" fill="black"/>
+                    <rect y="15.3496" width="33" height="3.83721" fill="black"/>
+                  </svg>
+                </div>
+              </div>
+            <p>UX | UI designer <br />24 years old, Minsk</p>
+          </div>
+          <img
+            class="disactive"
+            src="./img/novik_photo1.jpg"
+            width="940px"
+            height="387px"
+            alt="Novik"
+          />
+          <img
+            class="active"
+            src="./img/novik_photo2.png"
+            width="316.5px"
+            height="478px"
+            alt="Novik"
+          />
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="text" id="about">
+        <h2>About me</h2>
+        <p>
+          Hi, I'm Denis – UX/UI designer from Minsk.<br />
+          I'm interested in design and everything connected with it.
+        </p>
+        <p>
+          I'm studying at courses "Web and mobile design <br />
+          interfaces" in IT-Academy.
+        </p>
+        <p>
+          Ready to implement excellent projects <br />with wonderful people.
+        </p>
+      </section>
+      <div class="conteiner">
+        <section class="skills" id="skills">
+          <h2>Skills</h2>
+          <p>I work in such programs as</p>
+          <div class="skills-icons">
+            <figure>
+              <img src="./icons/PS.png" width="89px" height="89px" alt="PS" />
+              <figcaption>
+                Adobe <br />
+                Photoshop
+              </figcaption>
+              <img src="./icons/PS stars.png" alt=" Stars" />
+            </figure>
+            <figure>
+              <img
+                src="./icons/Illustrator.png"
+                width="89px"
+                height="89px"
+                alt="Illustrator"
+              />
+              <figcaption>
+                Adobe <br />
+                Illustrator
+              </figcaption>
+              <img src="./icons/Illustrator stars.png" alt=" Stars" />
+            </figure>
+            <figure>
+              <img
+                src="./icons/After Effects.png"
+                width="89px"
+                height="89px"
+                alt="After Effects"
+              />
+              <figcaption>
+                Adobe <br />
+                After Effects
+              </figcaption>
+              <img src="./icons/After Effects stars.png" alt=" Stars" />
+            </figure>
+            <figure>
+              <img
+                src="./icons/Figma.png"
+                width="58px"
+                height="89px"
+                alt="Figma"
+              />
+              <figcaption class="skills-figma">Figma</figcaption>
+              <img src="./icons/Figma stars.png" alt=" Stars" />
+            </figure>
+          </div>
+        </section>
+      </div>
+      <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="conteiner">
+          <img
+            class="disactive"
+            src="./img/photo1.jpg"
+            width="940px"
+            height="512px"
+            alt="Photo"
+          />
+          <img
+            class="active"
+            src="./img/media1.png"
+            width="316px"
+            height="171px"
+            alt="Photo"
+          />
+          <p><a href="/">Online fashion store - Homepage</a></p>
+          <img
+            class="disactive"
+            src="./img/photo2.jpg"
+            width="940px"
+            height="524px"
+            alt="Photo"
+          />
+          <img
+            class="active"
+            src="./img/media2.png"
+            width="316px"
+            height="171px"
+            alt="Photo"
+          />
+          <p><a href="/">Reebok Store - Concept</a></p>
+          <img
+          class="disactive"
+            src="./img/photo3.jpg"
+            width="940px"
+            height="524px"
+            alt="Photo"
+          />
+          <img
+            class="active"
+            src="./img/media3.png"
+            width="316px"
+            height="171px"
+            alt="Photo"
+          />
+          <p><a href="/">Braun Landing Page - Concept</a></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="conteiner">
+        <section class="footer" id="contacts">
+          <h2>Contacts</h2>
+          <p>Want to know more or just chat? <br />You are welcome!</p>
+          <button type="submit">Send message</button>
+          <div>
+            <a href="/">
+              <img src="./icons/footer icons/linkedin.svg" alt="Icon" />
+            </a>
+            <a href="/">
+              <img src="./icons/footer icons/instagram.svg" alt="Icon" />
+            </a>
+            <a href="/">
+              <img src="./icons/footer icons/behance.svg" alt="Icon" />
+            </a>
+            <a href="/">
+              <img src="./icons/footer icons/dribble.svg" alt="Icon" />
+            </a>
+          </div>
+          <p>
+            Like me on <br />
+            LinkedIn, Instagram, Behance, Dribble
+          </p>
+        </section>
+      </div>
+    </footer>
+    <script src="./app/index.js"></script>
+  </body>
+</html>
