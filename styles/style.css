@@ -12,6 +12,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .conteiner {
   width: 940px;
   margin: 0 auto;
@@ -149,7 +153,7 @@ p {
   margin: 45px 0 123px 0;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 935px) {
   .conteiner {
     width: 317px;
     margin: 0 auto;
